@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORwOKGgo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="progress.css">
+    <script src="https://kit.fontawesome.com/fdd536b1a1.js" crossorigin="anonymous"></script>
+    <title>Custom Video Player</title>
+</head>
+<body>
+    <h1>Custom Video Player</h1>
+    <!--This is the videoplayer. poster attribute gives the thumbnail and scr gives location of the actual video-->
+    <video src="videos/Red Dead Redmption 2 Trailer.mp4" id="video" class="screen" poster="images/Red dead redemption 2.jpg" width="400" height="400"></video>
+
+    <!--Adding Custom controls for the video player-->
+    <div class="controls">
+    <!-- This is the play button-->
+        <button class="btn" id="play">
+            <!--FontAwsome play button-->
+            <i class="fa fa-play fa-2x"></i>
+        </button>
+    <!--This is the stop button-->
+        <button class="btn" id="stop">
+            <!--Font Awsome play button-->
+            <i class="fa fa-stop fa-2x"></i>
+        </button>
+        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0"/>
+        <!--This is the time duration-->
+        <sapn class="timestamp" id="timestamp">00:00</sapn>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
